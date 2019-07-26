@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+   
+// function addd()
+// { var tot=0;
+//     for(var i=0;i<arguments.length;i++){
+//         tot+=arguments[i];    
+//         }
+//         return tot;
+// };
+// function addd(num1=2,num2=3){
+//     return num1 +num2
+// }
+
+// function addd(num1,num2){
+//     var inum1=num1 || 3;
+//     var inum2=num2 || 2;
+//     return inum1+inum2;
+// }
+function addd(...num)
+{ var tot=0;
+    for(var i=0;i<num.length;i++){
+        tot+=num[i];    
+        }
+        return tot;
+};
+var arr=[2,3,6,5]
+
+console.log(addd(arr[0],arr[1],arr[2],arr[3]));
+// console.log(addd(3,6,2,2,8,9));
+console.log(addd(...arr));
+</script>
+</head>
+<body>
+    
+</body>
+</html>

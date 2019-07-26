@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var num=[2,3,4,5,6,7,8,10,12,6,13,16];
+    var doublenum1=[];
+    var doublenum2=[];
+    var sum=0;
+    function ss(){
+    for(var i=0;i<num.length;i++){
+        sum+=num[i];
+        doublenum1.push(num[i]*2);
+    }
+    console.log(sum);
+    }
+    num.forEach(function(val,idx,arr){
+        doublenum2.push(idx*2);
+    })
+var doublenum3=num.map(function(val,idx,arr){
+    return val*2;
+})
+var morethan10=num.filter(function(val,idx,arr){
+    return val>=10;
+})
+var tot=num.reduce(function(init,val,idx,arr){
+    return init+=val;
+},0)
+
+    console.log(num);
+    console.log("--------------------------");
+    console.log(doublenum1);
+    console.log("--------------------------");
+    console.log(doublenum2);
+    console.log(doublenum1);
+    console.log("--------------------------");
+    console.log(doublenum3);
+    console.log("--------------------------");
+    console.log(morethan10);
+    console.log("--------------------------");
+    console.log(ss());
+    console.log("--------------------------");
+    console.log(tot);
+    console.log("--------------------------");
+    console.log(num.indexOf(6));
+    console.log(num.lastIndexOf(6));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

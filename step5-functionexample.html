@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    // var cart={
+    //     getcostprice:function(){
+    //         return 100
+    //     },
+    //     getsellingPrice:function(){
+    //         var self=this;
+    //         var calculateprofit=function(){
+    //           return  self.getcostprice()*0.2
+                
+    //         }
+    //         return this.getcostprice()+calculateprofit();
+    //     }
+      
+    // };
+    // var cart={
+    //     getcostprice:function(){
+    //         return 100
+    //     },
+    //     getsellingPrice:function(){
+    //         // var self=this;
+    //         var calculateprofit= () => {
+    //           return  this.getcostprice()*0.2
+                
+    //         }
+    //         return this.getcostprice()+calculateprofit();
+    //     }
+      
+    // };
+    var cart={
+        getcostprice:function(){
+            return 100
+        },
+        getsellingPrice:function(){
+            // var self=this;
+            var calculateprofit= () => {
+              return  this.getcostprice()*0.2
+                
+            }
+            return this.getcostprice()+calculateprofit();
+        }
+      
+    };
+    console.log(cart.getsellingPrice());//120
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

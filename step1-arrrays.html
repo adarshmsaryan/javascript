@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+
+    <script>
+        var heroes = [
+            { title : "Ironman", power : 7},
+            { title : "Superman", power : 9},
+            { title : "Spiderman", power : 6},
+            { title : "Batman", power : 8},
+            { title : "Phantom", power : 6},
+            { title : "Robin", power : 5},
+            { title : "Antman", power : 4},
+            { title : "Kabali", power : 10}
+        ]
+        console.log(heroes.sort(sorth));
+        function sorth(hero1,hero2){
+            if(hero1.power< hero2.power)
+            {
+                return -1;
+            }
+            if(hero1.power< hero2.power)
+            {
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+
+        Array.prototype.valtech=function(){
+            return "hello";
+        }
+    var arr=new Array(5);
+    console.log(arr.length);
+    console.log(arr.valtech());
+    var num=[3,8,10,5,7,12,11,16,2];
+    console.log(num.sort(sorfun));
+    function sorfun(num1,num2){
+        if(num1<num2){
+            return -1;
+        }
+        else if(num1>num2){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
